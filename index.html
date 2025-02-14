@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carta de Amor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="toggleTheme">Modo Oscuro</button>
+  <main>
+    <div class="container-letter">
+      <div class="cover"></div>
+      <span class="heart">♥</span>
+      <p class="paper" id="mainMessage">
+        💖 Mi niña te amo hoy y siempre, de dia o noche, con frio o calor y a todas horas siempre seras mi amor.💖
+        De día o noche siempre estarás en mi corazón, hoy y siempre tu amorchis. 💖
+      </p>
+      <div class="letter"></div>
+      <img id="loveImage" src="imagen.jpg" alt="Nuestra Foto" class="hidden">
+      <button id="revealMessage" class="hidden">Ver Mensaje Secreto</button>
+      <p id="secretMessage" class="hidden">01010100 01100101 00100000 01000001 01101101 01101111 💖</p>
+    </div>
+    <div class="options">
+      <button id="open">Abrir</button>
+      <button id="close">Cerrar</button>
+      <button id="printLetter">Imprime tu carta</button>
+    </div>
+  </main>
+  <audio id="openSound" src="open-sound.mp3"></audio>
+  <audio id="closeSound" src="close-sound.mp3"></audio>
+  <audio id="backgroundMusic" src="tu-cancion-romantica.mp3" loop></audio>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
